@@ -1,13 +1,13 @@
 var gameCount=0;
 //count number of times when user click start button
-function startGame()
-{
-gameCount++;
-document.getElementById("keytoRace").style.visibility="visible";
-var playerStrip = document.querySelectorAll('tr')
-if(gameCount<=1)
-{
-//creating track length
+function startGame() { // this is javascript, not java! haha. open brace goes on same line as function declaration
+// everything inside the function block needs to be indented:
+  gameCount++;
+  document.getElementById("keytoRace").style.visibility="visible";
+  var playerStrip = document.querySelectorAll('tr')
+  if(gameCount<=1)
+  {
+ //creating track length
           trackLength = prompt("How many km required for you to escape from the city?") 
           for (var i = 0; i < playerStrip.length; i++) { 
           for ( var j = 0; j < trackLength; j++){
